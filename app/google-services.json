@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "757842839930",
+    "project_id": "safeyatra-34f00",
+    "storage_bucket": "safeyatra-34f00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757842839930:android:24fdc75552d018b7e6eec3",
+        "android_client_info": {
+          "package_name": "com.example.safeyatra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757842839930-blvrdv813i2nec69k6enosenm2k16cak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPkvYWtDEn6OAkPIwWDvlY7RTLgoQh4o8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757842839930-blvrdv813i2nec69k6enosenm2k16cak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
