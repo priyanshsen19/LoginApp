@@ -17,4 +17,5 @@
     <string name="password">Password</string>
     <string name="name">Name</string>
     <string name="sign_in">Sign In</string>
+    <string name="logname">LOGIN</string>
 </resources>
