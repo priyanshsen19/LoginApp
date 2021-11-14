@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         signupBtn= findViewById(R.id.signup_btn)
         auth = FirebaseAuth.getInstance()
         signupBtn.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
             finish()
         }
