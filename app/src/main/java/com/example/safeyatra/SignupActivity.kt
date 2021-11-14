@@ -31,6 +31,9 @@ class SignupActivity : AppCompatActivity() {
         setContentView(binding.root)
         loginBtn = findViewById(R.id.login_btn)
 
+        auth = FirebaseAuth.getInstance()
+
+
         binding.loginBtn.setOnClickListener {
 
             val name = binding.name.text.toString()
@@ -40,10 +43,21 @@ class SignupActivity : AppCompatActivity() {
             val password = binding.pass.text.toString()
 
 
+
             database = FirebaseDatabase.getInstance().getReference("Users")
             val User = User(name,emergencycontact, phoneno,emailid, password)
             database.child(name).setValue(User).addOnSuccessListener {
                 Toast.makeText(this,"Successfully Saved",Toast.LENGTH_SHORT).show()
+                auth.createUserWithEmailAndPassword(emailid, password).addOnCompleteListener(this)
+                { task ->
+                    if(task.isSuccessful){
+                        val intent = Intent(this, LoginActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    }else {
+                        Toast.makeText(this, "Registration Failed", Toast.LENGTH_LONG).show()
+                    }
+                }
 
             }.addOnFailureListener{
                 Toast.makeText(this,"Failed",Toast.LENGTH_SHORT).show()
