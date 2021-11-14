@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
+        setContentView(R.layout.activity_main)
         emailEt = findViewById(R.id.edt1)
         passwordEt = findViewById(R.id.edt2)
         loginBtn= findViewById(R.id.secondActivityBtn)
