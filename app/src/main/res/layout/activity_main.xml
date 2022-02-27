@@ -73,12 +73,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:clickable="true"
-            android:focusable="true"
             android:minHeight="48dp"
             android:text="@string/forgot_password"
+            android:onClick="forgetpass"
             android:textColor="#0C0C0C"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:focusable="true" />
 
         <RelativeLayout
             android:layout_width="match_parent"

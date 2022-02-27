@@ -18,4 +18,7 @@
     <string name="name">Name</string>
     <string name="sign_in">Sign In</string>
     <string name="logname">LOGIN</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="resetpass">Reset</string>
+    <string name="enter_registered_email">Enter Registered email</string>
 </resources>

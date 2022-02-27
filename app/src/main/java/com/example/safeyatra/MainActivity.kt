@@ -4,8 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var loginBtn: Button
     private lateinit var signupBtn: Button
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,7 +29,9 @@ class MainActivity : AppCompatActivity() {
         passwordEt = findViewById(R.id.edt2)
         loginBtn= findViewById(R.id.secondActivityBtn)
         signupBtn= findViewById(R.id.signup_btn)
+
         auth = FirebaseAuth.getInstance()
+
         signupBtn.setOnClickListener {
             val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
@@ -50,6 +55,16 @@ class MainActivity : AppCompatActivity() {
                     }
                 })
             }
+        }
+    }
+
+    fun forgetpass(view: View) {
+
+        val forget: TextView = findViewById(R.id.reset_pass_tv)
+        forget.setOnClickListener {
+            val intent = Intent(this, ForgetpassActivity2::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }

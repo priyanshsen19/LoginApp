@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.safeyatra">
 
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        tools:ignore="ManifestOrder" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/app_icon_1"
@@ -10,7 +15,6 @@
         android:roundIcon="@mipmap/app_icon_1_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Safeyatra">
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -21,10 +25,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
+        <activity android:name=".ForgetpassActivity2"/>
         <activity android:name=".SignupActivity" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET"
-        tools:ignore="ManifestOrder" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 </manifest>
