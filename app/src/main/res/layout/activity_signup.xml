@@ -32,27 +32,14 @@
             android:layout_marginTop="36dp"
             android:background="@drawable/input"
             android:hint="@string/name"
+            android:inputType="text"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
-            android:inputType="text"
-            tools:ignore="Autofill" />
+            tools:ignore="Autofill,TextContrastCheck,TextContrastCheck" />
 
-        <EditText
-            android:id="@+id/emergencycontact"
-            android:layout_width="360dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/input"
-            android:hint="@string/emergency_contact"
-            android:paddingStart="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name"
-            tools:ignore="Autofill,RtlSymmetry"
-            android:inputType="number" />
 
         <EditText
             android:id="@+id/phoneno"
@@ -61,13 +48,14 @@
             android:layout_marginTop="32dp"
             android:background="@drawable/input"
             android:hint="@string/phone_no"
+            android:inputType="number"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:textColorHint="#4E342E"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emergencycontact"
-            android:inputType="number"
-            tools:ignore="Autofill,TextFields" />
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:ignore="Autofill,TextFields,TextContrastCheck,TextContrastCheck" />
 
         <EditText
             android:id="@+id/email"
@@ -76,13 +64,14 @@
             android:layout_marginTop="32dp"
             android:background="@drawable/input"
             android:hint="@string/email_id"
+            android:inputType="textEmailAddress"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/phoneno"
-            android:inputType="textEmailAddress"
-            tools:ignore="Autofill" />
+            tools:ignore="Autofill,TextContrastCheck,TextContrastCheck" />
+
         <EditText
             android:id="@+id/pass"
             android:layout_width="360dp"
@@ -90,25 +79,26 @@
             android:layout_marginTop="32dp"
             android:background="@drawable/input"
             android:hint="@string/password"
+            android:inputType="textPassword"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email"
-            android:inputType="textPassword"
-            tools:ignore="Autofill" />
+            tools:ignore="Autofill,TextContrastCheck,TextContrastCheck" />
 
         <Button
             android:id="@+id/login_btn"
             android:layout_width="360dp"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="612dp"
+            android:layout_marginTop="52dp"
             android:backgroundTint="#B83662"
             android:text="@string/sign_in"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/pass" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

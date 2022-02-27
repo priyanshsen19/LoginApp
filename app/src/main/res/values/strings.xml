@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">safeyatra</string>
+    <string name="app_name">Login App</string>
     <string name="logged_in">logged In</string>
     <string name="signup_btn">Signup</string>
     <string name="email_hint">Email</string>

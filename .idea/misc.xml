@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/drawable/App_icon_background.xml" value="0.1" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/drawable/input.xml" value="0.2203125" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/drawable/screen_back.xml" value="0.2203125" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/layout/activity_signup.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/layout/login_activity.xml" value="0.2" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/safeyatra/app/src/main/res/layout/main.xml" value="0.12771739130434784" />
